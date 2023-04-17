@@ -1,10 +1,6 @@
-#canvas-1 {
-  width: 100%;
-}
-
 .content {
   height: 200vh;
-  background-color: rgb(26, 39, 6);
+  background-color: rgba(1, 0, 20, 0.568);
 
   display: flex;
   color: #fff;
@@ -13,7 +9,43 @@
   align-items: center;
 }
 
+.hero {
+  height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero button {
+  all: unset;
+  background-color: #000;
+  color: #fff;
+  padding: 1em 3em;
+
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 5px;
+
+  margin: 0 auto;
+
+  transition: all 0.2s;
+}
+
+.hero button:hover {
+  cursor: pointer;
+
+  box-shadow: 1px 3px 5px #a9a9a9;
+  transform: translateY(-3px);
+}
+
 .content h2 {
+  font-size: 50px;
 }
 
 .content button {
