@@ -67,8 +67,10 @@ const addConfettiToButton = (button) => {
     console.log("Button clicked");
     confetti({
       particleCount: 100,
-      angle: 45,
+      angle: 55,
+
       startVelocity: 15,
+      spread: 30,
       origin: {
         x: coords.x,
         y: coords.y,
