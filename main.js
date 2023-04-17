@@ -1,8 +1,13 @@
 import confetti from "canvas-confetti";
 
+/**
+ * UI Buttons
+ */
 const launchConfettiButton =
   document.getElementsByClassName("launch-confetti")[0];
+const contentButton = document.getElementsByClassName("content-confetti")[0];
 
+// A function that gets the coordinates of the right corner of the button
 const getButtonCoords = (button) => {
   const coords = button.getBoundingClientRect();
   console.log(coords);
@@ -17,6 +22,7 @@ const getButtonCoords = (button) => {
   };
 };
 
+// A function that adds the confetti to the button when it is clicked
 const addConfettiToButton = (button) => {
   button.addEventListener("click", () => {
     const coords = getButtonCoords(button);
@@ -35,8 +41,6 @@ const addConfettiToButton = (button) => {
   });
 };
 
+// Calling the functions for each button
 addConfettiToButton(launchConfettiButton);
-
-const contentButton = document.getElementsByClassName("content-confetti")[0];
-
 addConfettiToButton(contentButton);
